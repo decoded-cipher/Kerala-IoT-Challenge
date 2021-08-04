@@ -6,10 +6,12 @@
 ### About Me
 > Hello Folks! I'm [**Arjun Krishna**](http://arjunkrishna.in/). I'm a Post Graduation Student in Computer Applications (MCA) from [**Kristu Jyoti College of Management and Technology**](http://www.kristujyoticollege.com), Changanacherry. I have been exploring the world of IoT since my graduation life started. My life around IoT started to change when I got unrestricted access to the Mini IoT Lab that we setup at our [**Inovus Labs IEDC**](https://inovus-labs.web.app/). Happy to say, I'd almost tried out around 95% of components at the lab.
 
-### Exp 1 - Hello World LED Blinking
+### Experiment 1 - Hello World LED Blinking
 
+#### Circuit Diagram
 ![Hello World LED Blinking](https://user-images.githubusercontent.com/44474792/128217460-234ddef5-f473-461f-9da9-31f52f11faa2.png)
 
+#### Code
 ```ino
 void setup() 
 {
@@ -23,10 +25,12 @@ void loop() {
 }
 ```
 
-### Exp 1 - Traffic Light
+### Experiment 2 - Traffic Light
 
+#### Circuit Diagram
 ![Traffic Light](https://user-images.githubusercontent.com/44474792/128217429-bde0c21a-ba47-4658-a40d-aec8922f88ab.png)
 
+#### Code
 ```ino
 void setup() 
 {
@@ -56,4 +60,9 @@ void loop()
 }
 ```
 
-### Exp 3 - LED Chasing Effect
+### Experiment 3 - LED Chasing Effect
+
+#### Circuit Diagram
+
+
+#### Code
