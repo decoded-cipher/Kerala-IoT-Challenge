@@ -8,7 +8,7 @@
 ### Experiment 1 - Hello World LED Blinking
 
 #### Circuit Diagram
-![Hello World LED Blinking](https://user-images.githubusercontent.com/44474792/128217460-234ddef5-f473-461f-9da9-31f52f11faa2.png)
+![Hello World LED Blinking](https://user-images.githubusercontent.com/44474792/128236417-cd030db4-53f3-4dd4-9831-cca4ca870247.png)
 #### Code
 ```ino
 void setup() 
