@@ -7,7 +7,6 @@
 
 ### Experiment 1 - Hello World LED Blinking
 
-#### Image
 ![Hello World LED Blinking](https://user-images.githubusercontent.com/44474792/128236417-cd030db4-53f3-4dd4-9831-cca4ca870247.png)
 #### Code
 ```ino
@@ -25,7 +24,6 @@ void loop() {
 
 ### Experiment 2 - Traffic Light
 
-#### Image
 ![Traffic Light](https://user-images.githubusercontent.com/44474792/128236979-70b70180-38e3-4fce-954a-fa7d06d965b1.png)
 #### Code
 ```ino
@@ -59,7 +57,6 @@ void loop()
 
 ### Experiment 3 - LED Chasing Effect
 
-#### Image
 ![image](https://user-images.githubusercontent.com/44474792/128237949-b0a613aa-065e-47d2-aa78-35d281b9a94e.png)
 #### Code
 ```ino
