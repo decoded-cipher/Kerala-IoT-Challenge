@@ -10,7 +10,6 @@
 
 #### Circuit Diagram
 ![Hello World LED Blinking](https://user-images.githubusercontent.com/44474792/128217460-234ddef5-f473-461f-9da9-31f52f11faa2.png)
-
 #### Code
 ```ino
 void setup() 
@@ -29,7 +28,6 @@ void loop() {
 
 #### Circuit Diagram
 ![Traffic Light](https://user-images.githubusercontent.com/44474792/128217429-bde0c21a-ba47-4658-a40d-aec8922f88ab.png)
-
 #### Code
 ```ino
 void setup() 
