@@ -26,7 +26,7 @@ void loop() {
 ### Experiment 2 - Traffic Light
 
 #### Circuit Diagram
-![Traffic Light](https://user-images.githubusercontent.com/44474792/128217429-bde0c21a-ba47-4658-a40d-aec8922f88ab.png)
+![Traffic Light](https://user-images.githubusercontent.com/44474792/128236979-70b70180-38e3-4fce-954a-fa7d06d965b1.png)
 #### Code
 ```ino
 void setup() 
