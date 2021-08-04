@@ -1,5 +1,5 @@
 ## Kerala IoT Challenge Level : 1
-This page is used to keep track of my experiments at Kerala IoT Challenge Leevel : 1
+##This page is used to keep track of my experiments at Kerala IoT Challenge Level : 1
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
