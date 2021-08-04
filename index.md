@@ -23,7 +23,9 @@ void loop() {
 }
 ```
 
-### ![Traffic Light](https://user-images.githubusercontent.com/44474792/128217429-bde0c21a-ba47-4658-a40d-aec8922f88ab.png)
+### Exp 1 - Traffic Light
+
+![Traffic Light](https://user-images.githubusercontent.com/44474792/128217429-bde0c21a-ba47-4658-a40d-aec8922f88ab.png)
 
 ```ino
 void setup() 
