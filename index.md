@@ -83,3 +83,44 @@ void loop()
    }  
 }
 ```
+
+### Experiment 4 - Button Controlled LED
+
+![image](https://user-images.githubusercontent.com/44474792/131449487-aa3968f7-22d9-46e4-bbdf-28320b440122.jpg)
+#### Code
+```ino
+int x;
+void setup()
+{
+  pinMode(11, OUTPUT);
+  pinMode(7, INPUT);
+}
+void loop()
+{
+  val=digitalRead(7);
+  if(x == LOW)
+  {
+    digitalWrite(11, LOW);
+  }
+  else
+  {
+    digitalWrite(11, HIGH);
+  }
+}
+```
+
+### Experiment 5 - Buzzer
+
+![image](https://user-images.githubusercontent.com/44474792/131449487-aa3968f7-22d9-46e4-bbdf-28320b440122.jpg)
+#### Code
+```ino
+int x = 8;
+void setup() 
+{ 
+  pinMode(x,OUTPUT);
+} 
+void loop() 
+{
+  digitalWrite(x, HIGH);
+}
+```
