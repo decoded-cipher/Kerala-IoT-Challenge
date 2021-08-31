@@ -124,3 +124,38 @@ void loop()
   digitalWrite(x, HIGH);
 }
 ```
+
+### Experiment 5 - RGB LED
+
+![image](https://user-images.githubusercontent.com/44474792/131454311-4759b60a-1a38-41d7-81ea-0f67c87642ba.png)
+#### Code
+```ino
+int red = 11;
+int blue =10;
+int green =9;
+int x;
+void setup() {
+  pinMode(red, OUTPUT);
+  pinMode(blue, OUTPUT);
+  pinMode(green, OUTPUT);
+  Serial.begin(9600);
+}
+void loop() 
+{
+for(x=255; x>0; x--)
+  {
+   analogWrite(11, x);
+   analogWrite(10, 255-x);
+   analogWrite(9, 128-x);
+   delay(10); 
+  }
+for(x=0; x<255; x++)
+  {
+   analogWrite(11, x);
+   analogWrite(10, 255-x);
+   analogWrite(9, 128-x);
+   delay(10); 
+  }
+ Serial.println(x, DEC);
+}
+```
