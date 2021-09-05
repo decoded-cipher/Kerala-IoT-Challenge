@@ -5,6 +5,8 @@
 ### About Me
 > Hello Folks! I'm [**Arjun Krishna**](http://arjunkrishna.in/). I'm a Post Graduation Student in Computer Applications (MCA) from [**Kristu Jyoti College of Management and Technology**](http://www.kristujyoticollege.com), Changanacherry. I have been exploring the world of IoT since my graduation life started. My life around IoT started to change when I got unrestricted access to the Mini IoT Lab that we setup at our [**Inovus Labs IEDC**](https://inovus-labs.web.app/). Happy to say, I'd almost tried out around 95% of components at the lab. I'm here to learn more on IoT; and thus awaiting for the future Levels of **Kerala IoT Challenge**. 
 
+## IoT Challenge Experiments
+
 ### Experiment 1 - Hello World LED Blinking
 
 ![Hello World LED Blinking](https://user-images.githubusercontent.com/44474792/132120834-bddf79e5-99d3-4d99-a355-b5776fd7c1a0.jpg)
@@ -272,5 +274,43 @@ void loop()
   delay(50);
   val = analogRead(potpin);
   Serial.println(val);
+}
+```
+
+### Experiment 12 - Segment Display
+
+![image]()
+#### Code
+```ino
+// To be filled
+```
+
+## IoT Challenge Assignments
+
+### Assignment 1 - Automatic Night Lamp
+
+![image]()
+#### Code
+```ino
+const int LED = 13;  
+const int LDR = A0;  
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(LED, OUTPUT); 
+  pinMode(LDR, INPUT);   
+}
+
+void loop()
+{
+  int ldrStatus = analogRead(LDR);  
+  if (ldrStatus <= 400) {
+    digitalWrite(LED, HIGH);               
+    Serial.println("Room is DARK - LED ON");
+  }
+  else {
+    digitalWrite(LED, LOW);         
+    Serial.println("Room is BRIGHT - LED OFF");
+    }
 }
 ```
