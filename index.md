@@ -7,14 +7,15 @@
 
 ### Experiment 1 - Hello World LED Blinking
 
-![Hello World LED Blinking](https://user-images.githubusercontent.com/44474792/128236417-cd030db4-53f3-4dd4-9831-cca4ca870247.png)
+![Hello World LED Blinking](https://user-images.githubusercontent.com/44474792/132120834-bddf79e5-99d3-4d99-a355-b5776fd7c1a0.jpg)
 #### Code
 ```ino
 void setup() 
+{ 
+  pinMode(8, OUTPUT);
+} 
+void loop() 
 {
-   pinMode(8, OUTPUT);
-}
-void loop() {
   digitalWrite(8, HIGH);
   delay(1000);
   digitalWrite(8, LOW);
@@ -24,13 +25,13 @@ void loop() {
 
 ### Experiment 2 - Traffic Light
 
-![Traffic Light](https://user-images.githubusercontent.com/44474792/128236979-70b70180-38e3-4fce-954a-fa7d06d965b1.png)
+![Traffic Light](https://user-images.githubusercontent.com/44474792/132121020-4329f96c-e525-4472-aad3-e703826993d2.jpg)
 #### Code
 ```ino
 void setup() 
 {
    pinMode(13, OUTPUT);
-   pinMode(12, OUTPUT);
+   pinMode(10, OUTPUT);
    pinMode(8, OUTPUT);
 }
 
@@ -43,9 +44,9 @@ void loop()
   for(int i=0; i<3; i++)
   {
     delay(500);
-    digitalWrite(12, HIGH);
+    digitalWrite(10, HIGH);
     delay(500);
-    digitalWrite(12, LOW);
+    digitalWrite(10, LOW);
   }
   
   delay(500);
@@ -57,26 +58,24 @@ void loop()
 
 ### Experiment 3 - LED Chasing Effect
 
-![image](https://user-images.githubusercontent.com/44474792/128237949-b0a613aa-065e-47d2-aa78-35d281b9a94e.png)
+![image](https://user-images.githubusercontent.com/44474792/132120873-538e171f-9ffd-4356-aa7f-45576711db21.jpg)
 #### Code
 ```ino
-int BASE = 2 ;
-int NUM = 6;
 void setup()
 {
-   for (int i = BASE; i < BASE + NUM; i ++) 
+   for (int i = 7; i < 13; i ++) 
    {
      pinMode(i, OUTPUT);
    }
 }
 void loop()
 {
-   for (int i = BASE; i < BASE + NUM; i ++) 
+   for (int i = 7; i < 13; i ++) 
    {
      digitalWrite(i, LOW);
      delay(200);
    }
-   for (int i = BASE; i < BASE + NUM; i ++) 
+   for (int i = 7; i < 13; i ++) 
    {
      digitalWrite(i, HIGH);
      delay(200);
@@ -111,17 +110,19 @@ void loop()
 
 ### Experiment 5 - Buzzer
 
-![image](https://user-images.githubusercontent.com/44474792/131449487-aa3968f7-22d9-46e4-bbdf-28320b440122.jpg)
+![image](https://user-images.githubusercontent.com/44474792/132120819-7dca413d-2dbe-41b3-9929-c44915715aa0.jpg)
 #### Code
 ```ino
-int x = 8;
 void setup() 
 { 
-  pinMode(x,OUTPUT);
+  pinMode(8, OUTPUT);
 } 
 void loop() 
 {
-  digitalWrite(x, HIGH);
+  digitalWrite(8, HIGH);
+  delay(1000);
+  digitalWrite(8, LOW);
+  delay(1000);
 }
 ```
 
