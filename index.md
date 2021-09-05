@@ -217,3 +217,60 @@ void loop() {
   delay(1000);
 }
 ```
+
+### Experiment 10 - IR Remote Control using TSOP
+
+![image](https://user-images.githubusercontent.com/44474792/132123811-9a9b2e0c-fa46-4071-afa0-cce80012e10d.png)
+#### Code
+```ino
+#include <IRremote.h>
+ 
+int RECV_PIN = 3;
+int c=0;
+IRrecv irrecv(RECV_PIN);
+decode_results results;
+
+void setup()
+{
+  pinMode(9, OUTPUT);
+  Serial.begin(9600);
+  irrecv.enableIRIn();
+}
+
+void loop() {
+  if (irrecv.decode(&results)) {
+    Serial.println(results.value);
+    irrecv.resume();
+    if(results.value==YOUR VALUE1) {
+      digitalWrite(9,HIGH);
+    }
+    else if(results.value==YOUR VALUE2) {
+    digitalWrite(9,LOW);
+    }
+  }
+}
+```
+
+### Experiment 11 - Potentiometer analog Value Reading
+
+![image](https://user-images.githubusercontent.com/44474792/132124333-56134c03-b7e2-4573-af4b-6006ee8935ce.jpg)
+#### Code
+```ino
+int potpin = 0;
+int ledpin = 13;
+int val = 0;
+void setup()
+{
+pinMode(ledpin,OUTPUT);
+Serial.begin(9600);
+}
+void loop()
+{
+  digitalWrite(ledpin, HIGH);
+  delay(50);
+  digitalWrite(ledpin, LOW);
+  delay(50);
+  val = analogRead(potpin);
+  Serial.println(val);
+}
+```
