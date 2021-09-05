@@ -287,9 +287,9 @@ void loop()
 
 ## IoT Challenge Assignments
 
-### Assignment 1 - Automatic Night Lamp
+### Assignment 1 - Automatic Night Lamp using LDR & LED
 
-![image]()
+![image](https://user-images.githubusercontent.com/44474792/132135947-e491a270-75d1-4671-bff1-b2c5e540ddaf.png)
 #### Code
 ```ino
 const int LED = 13;  
@@ -312,5 +312,101 @@ void loop()
     digitalWrite(LED, LOW);         
     Serial.println("Room is BRIGHT - LED OFF");
     }
+}
+```
+
+### Assignment 2 - Digital Dice using 6 LEDs & 1 Push Button
+
+![image](https://user-images.githubusercontent.com/44474792/132137070-709c4008-857c-4ffd-91ae-92aabdb3a2e9.png)
+#### Code
+```ino
+#define DEBUG 0
+
+int first = 2;
+int second = 3;
+int third = 4;
+int fourth = 5;
+int fifth = 6;
+int sixth = 7;
+
+int button = 12;
+int pressed = 0;
+
+void setup() {
+  for (int i=first; i<=sixth; i++) {
+    pinMode(i, OUTPUT);
+  }
+  pinMode(button, INPUT);
+  randomSeed(analogRead(0));
+
+  #ifdef DEBUG
+  Serial.begin(9600);
+  #endif
+
+}
+
+void buildUpTension() {
+  for (int i=first; i<=sixth; i++) {
+    if (i!=first) {
+      digitalWrite(i-1, LOW);
+    }
+    digitalWrite(i, HIGH);
+    delay(100);
+  }
+  for (int i=sixth; i>=first; i--) {
+    if (i!=sixth) {
+      digitalWrite(i+1, LOW);
+    }
+    digitalWrite(i, HIGH);
+    delay(100);
+  }
+}
+
+void showNumber(int number) {
+  digitalWrite(first, HIGH);
+  if (number >= 2) {
+    digitalWrite(second, HIGH);
+  }
+  if (number >= 3) {
+    digitalWrite(third, HIGH);    
+  }
+  if (number >= 4) {
+    digitalWrite(fourth, HIGH);    
+  }
+  if (number >= 5) {
+    digitalWrite(fifth, HIGH);    
+  }
+  if (number == 6) {
+    digitalWrite(sixth, HIGH);    
+  }
+}
+
+int throwDice() {
+  int randNumber = random(1,7);
+  
+  #ifdef DEBUG
+    Serial.println(randNumber);
+  #endif
+  
+  return randNumber;
+}
+
+void setAllLEDs(int value) {
+  for (int i=first; i<=sixth; i++) {
+    digitalWrite(i, value);
+  }
+}
+
+void loop() {
+  pressed = digitalRead(button);
+
+  if (pressed == HIGH) {
+    setAllLEDs(LOW);
+    
+    buildUpTension();
+    int thrownNumber = throwDice();
+    showNumber(thrownNumber);
+  } 
+
 }
 ```
