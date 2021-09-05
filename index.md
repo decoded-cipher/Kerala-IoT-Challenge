@@ -87,7 +87,7 @@ void loop()
 
 ### Experiment 4 - Button Controlled LED
 
-![image](https://user-images.githubusercontent.com/44474792/131449487-aa3968f7-22d9-46e4-bbdf-28320b440122.jpg)
+![image](https://user-images.githubusercontent.com/44474792/132127439-d7130337-10d2-4ff7-898e-99dced487cba.png)
 #### Code
 ```ino
 int x;
