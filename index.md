@@ -126,7 +126,7 @@ void loop()
 }
 ```
 
-### Experiment 5 - RGB LED
+### Experiment 6 - RGB LED
 
 ![image](https://user-images.githubusercontent.com/44474792/131454311-4759b60a-1a38-41d7-81ea-0f67c87642ba.png)
 #### Code
@@ -158,5 +158,37 @@ for(x=0; x<255; x++)
    delay(10); 
   }
  Serial.println(x, DEC);
+}
+```
+
+### Experiment 8 - Flame Sensor
+
+![image](https://user-images.githubusercontent.com/44474792/132122467-26653513-32ed-4e38-ad54-cf36b7edd49d.jpg)
+#### Code
+```ino
+const int buzzerPin = 12;
+const int flamePin = 11;
+int Flame = HIGH;
+
+void setup() 
+{
+  pinMode(buzzerPin, OUTPUT);
+  pinMode(flamePin, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() 
+{
+  Flame = digitalRead(flamePin);
+  if (Flame== LOW)
+  {
+    Serial.println("Fire!!!");
+    digitalWrite(buzzerPin, HIGH);
+  }
+  else
+  {
+    Serial.println("No worries");
+    digitalWrite(buzzerPin, LOW);
+  }
 }
 ```
