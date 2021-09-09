@@ -222,33 +222,62 @@ void loop() {
 
 ### Experiment 10 - IR Remote Control using TSOP
 
-![image](https://user-images.githubusercontent.com/44474792/132123811-9a9b2e0c-fa46-4071-afa0-cce80012e10d.png)
+![image](https://user-images.githubusercontent.com/44474792/132744337-ef029ada-923d-4a5d-8d72-0d9344332393.png)
 #### Code
 ```ino
 #include <IRremote.h>
- 
-int RECV_PIN = 3;
-int c=0;
+int redLed = 5;
+int yellowLed = 4;
+int greenLed = 3;
+int blueLed = 2;
+int RECV_PIN = 11;
 IRrecv irrecv(RECV_PIN);
 decode_results results;
 
+
 void setup()
 {
-  pinMode(9, OUTPUT);
+  pinMode(redLed, OUTPUT);
+  pinMode(yellowLed, OUTPUT);
+  pinMode(greenLed, OUTPUT);
+  pinMode(blueLed, OUTPUT);
+  
   Serial.begin(9600);
-  irrecv.enableIRIn();
+  Serial.println("Enabling IRin");
+  irrecv.enableIRIn(); 
+  Serial.println("Enabled IRin");
 }
 
 void loop() {
   if (irrecv.decode(&results)) {
-    Serial.println(results.value);
+    unsigned int value = results.value;
+    Serial.println(value);
+    switch (value) {
+      case 2295: 
+      	digitalWrite(redLed, HIGH);
+      	delay(500);
+      	digitalWrite(redLed, LOW);
+      	break;
+      
+      case 34935:
+      	digitalWrite(yellowLed, HIGH);
+      	delay(500);
+      	digitalWrite(yellowLed, LOW);
+      	break;
+      
+      case 18615:
+      	digitalWrite(greenLed, HIGH);
+      	delay(500);
+      	digitalWrite(greenLed, LOW);
+      	break;
+      
+      case 10455:
+      	digitalWrite(blueLed, HIGH);
+      	delay(500);
+      	digitalWrite(blueLed, LOW);
+    }
+    
     irrecv.resume();
-    if(results.value==YOUR VALUE1) {
-      digitalWrite(9,HIGH);
-    }
-    else if(results.value==YOUR VALUE2) {
-    digitalWrite(9,LOW);
-    }
   }
 }
 ```
