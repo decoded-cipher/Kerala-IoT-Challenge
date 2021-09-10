@@ -1,4 +1,4 @@
-## Kerala IoT Challenge
+# Kerala IoT Challenge
 
 > **Foxlab Makerspace** in association with **GTech - Group of Technology Companies** in Kerala is launching our prestigious program  **“Kerala IoT Challenge 2021”**,  with a vision to mould 100 IoT experts in Kerala, hosting on the µLearn platform. **Kerala IoT Challenge** is a program designed in 4 levels followed by a hackathon to identify and train quality industry leaders in the IoT domain, while any novice learner can start with layer 1 and others can enter laterally to the desired layer after an evaluation.
 
@@ -478,7 +478,7 @@ void loop(void)
 
 ## IoT Challenge Assignments
 
-### Assignment 1 - Automatic Night Lamp using LDR & LED
+### **Assignment 1** - Automatic Night Lamp using LDR & LED
 
 ![image](https://user-images.githubusercontent.com/44474792/132135947-e491a270-75d1-4671-bff1-b2c5e540ddaf.png)
 #### Code
@@ -506,7 +506,7 @@ void loop()
 }
 ```
 
-### Assignment 2 - Digital Dice using 6 LEDs & 1 Push Button
+### **Assignment 2** - Digital Dice using 6 LEDs & 1 Push Button
 
 ![image](https://user-images.githubusercontent.com/44474792/132137070-709c4008-857c-4ffd-91ae-92aabdb3a2e9.png)
 #### Code
@@ -601,3 +601,6 @@ void loop() {
 
 }
 ```
+
+### My Experience
+> **Kerala IoT Challenge Level 1 : Cohort 1** was an awesome experience. I have been exploring IoT since the beginning of my graduation. As stated earlier, for this challenge too, I'd collected IoT Components from the Mini IoT Lab that we setup at our [**Inovus Labs IEDC**](https://inovus-labs.web.app/). As Sandra Krishnan & Jeevan Joseph joined the IoT Challenge : Level 1, we decided to tinker together. As some components were in short supply & some were damaged, we decided to opt [TinkerCad Simulator](https://www.tinkercad.com/dashboard?type=circuits) for completing such Experiments. It was my first ever experience with TinkerCad. That's the main take-away for me from this challenge.
