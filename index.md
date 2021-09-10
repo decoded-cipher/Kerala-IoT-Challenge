@@ -311,14 +311,14 @@ void loop()
 ![image](https://user-images.githubusercontent.com/44474792/132795657-db1977a0-412d-426d-a87a-cfdf6b7fa724.png)
 #### Code
 ```ino
-unsigned const int A = 13;
-unsigned const int B = 12;
-unsigned const int C = 11;
-unsigned const int D = 10;
-unsigned const int E = 9;
-unsigned const int F = 8;
-unsigned const int G = 7;
-unsigned const int H = 6;
+int A = 13;
+int B = 12;
+int C = 11;
+int D = 10;
+int E = 9;
+int F = 8;
+int G = 7;
+int H = 6;
 
 void setup(void)
 {
