@@ -603,4 +603,8 @@ void loop() {
 ```
 
 ### My Experience
-> **Kerala IoT Challenge Level 1 : Cohort 1** was an awesome experience. I have been exploring IoT since the beginning of my graduation. As stated earlier, for this challenge too, I'd collected IoT Components from the Mini IoT Lab that we setup at our [**Inovus Labs IEDC**](https://inovus-labs.web.app/). As Sandra Krishnan & Jeevan Joseph joined the IoT Challenge : Level 1, we decided to tinker together. As some components were in short supply & some were damaged, we decided to opt [TinkerCad Simulator](https://www.tinkercad.com/dashboard?type=circuits) for completing such Experiments. It was my first ever experience with TinkerCad. That's the main take-away for me from this challenge.
+> **Kerala IoT Challenge : Level 1** was an awesome experience. I have been exploring IoT since the beginning of my graduation. As stated earlier, for this challenge too, I'd collected IoT Components from the Mini IoT Lab that we setup at our [**Inovus Labs IEDC**](https://inovus-labs.web.app/). As Sandra Krishnan & Jeevan Joseph joined the IoT Challenge, we decided to tinker together.
+
+> As some IoT components were in short supply & some were damaged, we decided to opt [TinkerCad Simulator](https://www.tinkercad.com/dashboard?type=circuits) for completing such Experiments. It was my first ever experience with TinkerCad. That's the main take-away for me from this challenge. I'd almost 80% of the experiments in TinkerCard; of which some of them are attached in the documentation. And above all, it's my first ever experience of documenting my IoT Experiments.
+
+> I'm eagerly waiting to explore more from **Kerala IoT Challenege : Level 2**. Hope we'll be having some really cool cloud based projects in the upcoming Levels like **Home Automation, Weather Prediction by collecting & analysing the Temperature & Humidity Sensor values in Cloud** etc. I'm also interested in Mentoring the future learners of **Level-1 : Cohort-2**.
