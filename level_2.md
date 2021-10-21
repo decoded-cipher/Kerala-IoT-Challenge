@@ -1,6 +1,8 @@
 # Kerala IoT Challenge Level-2
 
-### Experiment 1 - Hello World LED Program Using Blynk App
+> As **ESP32 Boards** were not available (As of now), I opt for **NodeMCU-ESP8266** for conducting the experiments. Even though both boards differ a lot in features & capabilities, **NodeMCU-ESP8266** could serve my purpose for the present scenario.
+
+### Experiment 1 - Hello World LED Program Using Blynk App  
 
 ![Hello World LED Blinking](https://user-images.githubusercontent.com/44474792/138228740-3d4a3a49-e353-4b59-9eec-edc6223c8788.jpg)
 #### Code
